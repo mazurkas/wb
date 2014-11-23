@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * 资源不存在异常
+ * Exception - 资源不存在异常.
  *
  * @author <a href="http://ruo.whosenet.com">ruo.whosenet.com</>
  * @version 1.0
