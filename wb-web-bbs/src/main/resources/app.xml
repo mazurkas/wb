@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+    <template id="articleContent" type="page" name="文章详情" templatePath="/portal/article/content.ftl" staticPath="/article/${createDate?string('yyyy')}/${createDate?string('MM')}/${createDate?string('dd')}/${createTime}/${pageNumber!1}.html" />
+    <template id="pageContent" type="page" name="单页" templatePath="/portal/article/page.ftl" staticPath="/page/${title}.html" />
+</application>

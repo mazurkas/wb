@@ -106,6 +106,10 @@ public class Article extends BaseEntity {
     @Column
     private Integer pageNumber;
 
+    /** 是否发布 */
+    @Column
+    private Boolean isPublication;
+
 
     public enum Type{
         article,page
@@ -413,4 +417,11 @@ public class Article extends BaseEntity {
         this.category = category;
     }
 
+    public Boolean getIsPublication() {
+        return isPublication;
+    }
+
+    public void setIsPublication(Boolean isPublication) {
+        this.isPublication = isPublication;
+    }
 }

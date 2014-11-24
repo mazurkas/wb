@@ -11,11 +11,15 @@
     <packaging>war</packaging>
 
 
-
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <parent>
+        <groupId>com.whosenet</groupId>
+        <artifactId>wb</artifactId>
+        <version>1.0</version>
+    </parent>
 
 
     <developers>
