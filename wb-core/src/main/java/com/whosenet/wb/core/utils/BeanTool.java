@@ -1,10 +1,7 @@
-/*
- * Author:albertruo@gmail.com
- */
-
 package com.whosenet.wb.core.utils;
 
-import com.whosenet.wb.entity.BaseEntity;
+
+import com.whosenet.wb.core.entity.BaseEntity;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapperImpl;

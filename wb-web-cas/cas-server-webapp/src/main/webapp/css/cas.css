@@ -149,7 +149,7 @@ header {
 }
 
 header #logo {
-    width: 100px;
+    width: 66px;
     height: 30px;
 }
 
@@ -215,17 +215,15 @@ header h1 {
 }
 
 #login {
-    width: 350px;
+    width: 370px;
     float: right;
     margin-left: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
 }
 
 #fm1 {
     padding: 20px;
-    background: #eee;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 #fm1 h2 {
@@ -272,12 +270,11 @@ header h1 {
     border-width: 2px;
     padding: 3px;
     margin-right: 4px;
-    /* background: #005aaa; */
     background-repeat: no-repeat;
     display: inline-block;
-    height: 35px;
+    height: 33px;
     overflow: hidden;
-    width: 120px;
+    width: 100px;
 }
 
 #fm1 .row .btn-reset {
@@ -294,11 +291,12 @@ header h1 {
 }
 
 #sidebar {
-    width: auto;
+    /*width: auto;*/
+    width: 60%;
 }
 
 #sidebar .sidebar-content {
-    padding-left: 20px;
+    padding-top: 30px;
 }
 
 #sidebar .sidebar-content p {
@@ -307,11 +305,12 @@ header h1 {
 
 #list-languages ul {
     list-style: none;
+    margin-top: 8px;
 }
 
 #list-languages ul li {
     display: inline-block;
-    padding: 0px 10px;
+    margin-right: 8px;
     border-right: 1px solid #e2e2e2;
 }
 

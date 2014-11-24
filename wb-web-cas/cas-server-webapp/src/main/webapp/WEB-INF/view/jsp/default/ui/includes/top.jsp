@@ -42,7 +42,7 @@
 <body id="cas">
   <header>
      <div class="container">
-         <a href="#" title=""><img id="logo" src="http://image.haier.com/cn/images/nr_login_logo.png" alt="<spring:message code="logo.title" />"></a>
+         <a href="#" title=""><img id="logo" src="<c:url value="/images/logo.png" />" alt="<spring:message code="logo.title" />"></a>
          <h1>用户登录</h1>
      </div>
   </header>
