@@ -10,7 +10,7 @@ import javax.persistence.PreUpdate;
 import java.util.Date;
 
 /**
- * Utils-Entity监听器.
+ * Utils - Entity监听器.
  *
  * @author <a href="http://ruo.whosenet.com">ruo.whosenet.com</>
  * @version 1.0
@@ -20,8 +20,7 @@ public class EntityListener {
 	/**
 	 * 保存前处理
 	 * 
-	 * @param entity
-	 *            基类
+	 * @param entity 基类
 	 */
 	@PrePersist
 	public void prePersist(BaseEntity entity) {
@@ -32,8 +31,7 @@ public class EntityListener {
 	/**
 	 * 更新前处理
 	 * 
-	 * @param entity
-	 *            基类
+	 * @param entity 基类
 	 */
 	@PreUpdate
 	public void preUpdate(BaseEntity entity) {

@@ -8,8 +8,8 @@ import java.io.IOException;
 
 /**
  * Filter - 限制访问
- * 
- * @author albertruo@gmail.com
+ *
+ * @author <a href="http://ruoo.whosenet.com">ruoo.whosenet.com</>
  * @version 1.0
  */
 public class AccessDeniedFilter implements Filter {

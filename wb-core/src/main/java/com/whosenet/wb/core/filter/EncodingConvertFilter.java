@@ -15,8 +15,8 @@ import java.util.Iterator;
 
 /**
  * Filter - 编码格式转换
- * 
- * @author albertruo@gmail.com
+ *
+ * @author <a href="http://ruoo.whosenet.com">ruoo.whosenet.com</>
  * @version 1.0
  */
 public class EncodingConvertFilter extends OncePerRequestFilter {
