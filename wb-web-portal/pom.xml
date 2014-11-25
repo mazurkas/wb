@@ -86,6 +86,21 @@
             <version>1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-all</artifactId>
+            <version>${org.apache.shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+
     </dependencies>
 
     <repositories>

@@ -24,16 +24,10 @@
     </mvc:interceptors>
 
 
-
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
         <property name="validationMessageSource" ref="messageSource" />
     </bean>
 
-
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="contentType" value="text/html; charset=UTF-8" />
-        <property name="suffix" value="${template.suffix}" />
-    </bean>
 
     <bean id="viewResolverJSP" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>

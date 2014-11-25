@@ -14,10 +14,9 @@ public class IndexController extends BaseController {
     /**
      * 列表
      */
-    @RequestMapping(value = "/u/{username}", method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String list( ModelMap model) {
-
-        return "/shop/article/list";
+        return "/index";
     }
 
 }

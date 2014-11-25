@@ -104,8 +104,7 @@
        | * org.jasig.cas.adaptors.x509.authentication.handler.support.X509CredentialsAuthenticationHandler
        | * org.jasig.cas.support.spnego.authentication.handler.support.JCIFSSpnegoAuthenticationHandler
        -->
-    <bean id="primaryAuthenticationHandler"
-          class="org.jasig.cas.authentication.AcceptUsersAuthenticationHandler">
+    <bean id="primaryAuthenticationHandler" class="org.jasig.cas.authentication.AcceptUsersAuthenticationHandler">
         <property name="users">
             <map>
                 <entry key="mei" value="mei"/>
@@ -114,8 +113,7 @@
     </bean>
 
     <!-- Required for proxy ticket mechanism -->
-    <bean id="proxyPrincipalResolver"
-          class="org.jasig.cas.authentication.principal.BasicPrincipalResolver" />
+    <bean id="proxyPrincipalResolver"  class="org.jasig.cas.authentication.principal.BasicPrincipalResolver" />
 
     <!--
        | Resolves a principal from a credential using an attribute repository that is configured to resolve
@@ -130,8 +128,7 @@
     Bean that defines the attributes that a service may return.  This example uses the Stub/Mock version.  A real implementation
     may go against a database or LDAP server.  The id should remain "attributeRepository" though.
     +-->
-    <bean id="attributeRepository" class="org.jasig.services.persondir.support.StubPersonAttributeDao"
-            p:backingMap-ref="attrRepoBackingMap" />
+    <bean id="attributeRepository" class="org.jasig.services.persondir.support.StubPersonAttributeDao"  p:backingMap-ref="attrRepoBackingMap" />
     
     <util:map id="attrRepoBackingMap">
         <entry key="uid" value="uid" />

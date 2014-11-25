@@ -2,18 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>wb-core</artifactId>
-    <name>wb-core</name>
-    <version>1.0</version>
-    <packaging>jar</packaging>
 
     <parent>
         <groupId>com.whosenet</groupId>
         <artifactId>wb</artifactId>
         <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>wb-core</artifactId>
+    <name>wb-core</name>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
 
     <developers>
@@ -28,48 +29,14 @@
 
 
     <build>
-        <finalName>${project.artifactId}-${project.version}</finalName>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-            </resource>
-        </resources>
-
         <plugins>
-
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
-                </configuration>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                    <encoding>UTF-8</encoding>
-                    <compilerArguments>
-                        <extdirs>src/main/webapp/WEB-INF/lib</extdirs>
-                    </compilerArguments>
-                </configuration>
+                <artifactId>maven-jar-plugin</artifactId>
             </plugin>
-
         </plugins>
     </build>
+
 
     <repositories>
         <repository>
@@ -78,6 +45,25 @@
             <url>http://maven.oschina.net/content/groups/public/</url>
         </repository>
     </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-all</artifactId>
+            <version>${org.apache.shiro.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+    </dependencies>
 
 
 </project>

@@ -9,7 +9,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath*:/spring-application.xml,classpath*:/spring-data-jpa.xml</param-value>
+        <param-value>classpath*:/spring-application.xml,classpath*:/spring-data-jpa.xml,classpath*:/spring-shiro-web.xml</param-value>
     </context-param>
 
 
@@ -27,10 +27,17 @@
         </init-param>
     </filter>
 
-      <filter>
+    <!-- shiro 安全过滤器 -->
+    <filter>
         <filter-name>shiroFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <async-supported>true</async-supported>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
     </filter>
+
 
 
     <filter-mapping>
