@@ -93,8 +93,8 @@
                         <connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
                             <port>8443</port>
                             <keystore>D:/localhost.keystore</keystore>
-                            <password>localhost</password>
-                            <keyPassword>localhost</keyPassword>
+                            <password>123456</password>
+                            <keyPassword>123456</keyPassword>
                         </connector>
                     </connectors>
                 </configuration>
