@@ -35,5 +35,5 @@ JavaEE 企业级应用脚手架,包含简单的企业门户,论坛系统,cas单�
 
 #Contributions
 
-* QQ Group:
+* QQ Group:319222432
 * [How to contribute](https://github.com/ruoo/wb/wiki/how-to-contribute)

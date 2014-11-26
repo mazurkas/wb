@@ -117,7 +117,9 @@
                 /casFailure.jsp = anon
                 /cas = cas
                 /logout = logout
-                /u/** = user
+                /settings.do** = user
+                /profile.do** = user
+                /settings.do** = user
             </value>
         </property>
     </bean>
